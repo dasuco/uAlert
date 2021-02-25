@@ -20,6 +20,7 @@ enum ColorTheme {
     case white
     case ligthGray
     case darkGray
+    case failAuth
     
     var color: UIColor {
         switch self {
@@ -39,6 +40,8 @@ enum ColorTheme {
             return UIColor(red: CGFloat(232.0/255.0), green: CGFloat(232.0/255.0), blue: CGFloat(232.0/255.0), alpha: CGFloat(1.0))
         case .darkGray:
             return UIColor(red: CGFloat(184.0/255.0), green: CGFloat(184.0/255.0), blue: CGFloat(184.0/255.0), alpha: CGFloat(1.0))
+        case .failAuth:
+            return UIColor(red: CGFloat(255.0/255.0), green: CGFloat(40.0/255.0), blue: CGFloat(150.0/255.0), alpha: CGFloat(1.0))
         }
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2211FFE725E7CAAA005CFD1F /* uAlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2211FFE625E7CAAA005CFD1F /* uAlertsViewController.swift */; };
+		2211FFEA25E7CE9E005CFD1F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2211FFE925E7CE9E005CFD1F /* LocalAuthentication.framework */; };
 		229092DB25E55392004ECDB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229092DA25E55392004ECDB7 /* AppDelegate.swift */; };
 		229092DD25E55392004ECDB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229092DC25E55392004ECDB7 /* SceneDelegate.swift */; };
 		229092DF25E55392004ECDB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229092DE25E55392004ECDB7 /* LoginViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2211FFE625E7CAAA005CFD1F /* uAlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uAlertsViewController.swift; sourceTree = "<group>"; };
+		2211FFE925E7CE9E005CFD1F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		229092D725E55392004ECDB7 /* uAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		229092DA25E55392004ECDB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		229092DC25E55392004ECDB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2211FFEA25E7CE9E005CFD1F /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2211FFE825E7CE9E005CFD1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2211FFE925E7CE9E005CFD1F /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		229092CE25E55392004ECDB7 = {
 			isa = PBXGroup;
 			children = (
 				229092D925E55392004ECDB7 /* uAlert */,
 				229092D825E55392004ECDB7 /* Products */,
+				2211FFE825E7CE9E005CFD1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +75,7 @@
 				229092DA25E55392004ECDB7 /* AppDelegate.swift */,
 				229092DC25E55392004ECDB7 /* SceneDelegate.swift */,
 				229092DE25E55392004ECDB7 /* LoginViewController.swift */,
+				2211FFE625E7CAAA005CFD1F /* uAlertsViewController.swift */,
 				229092E025E55392004ECDB7 /* Main.storyboard */,
 				229092E525E55393004ECDB7 /* LaunchScreen.storyboard */,
 				22B9242225E673AD006DED21 /* Supporting Files */,
@@ -151,6 +166,7 @@
 			files = (
 				229092DF25E55392004ECDB7 /* LoginViewController.swift in Sources */,
 				229092DB25E55392004ECDB7 /* AppDelegate.swift in Sources */,
+				2211FFE725E7CAAA005CFD1F /* uAlertsViewController.swift in Sources */,
 				22B9242425E67415006DED21 /* Utilities.swift in Sources */,
 				229092DD25E55392004ECDB7 /* SceneDelegate.swift in Sources */,
 			);
