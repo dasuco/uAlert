@@ -24,31 +24,33 @@ enum ColorTheme {
     var color: UIColor {
         switch self {
         case .lightOrange:
-            return UIColor(red: 255, green: 235, blue: 171, alpha: 1.0)
+            return UIColor(red: CGFloat(255.0/255.0), green: CGFloat(200.0/255.0), blue: CGFloat(155.0/255.0), alpha: CGFloat(1.0))
         case .darkOrange:
-            return UIColor(red: 255, green: 213, blue: 130, alpha: 1.0)
+            return UIColor(red: CGFloat(255.0/255.0), green: CGFloat(213.0/255.0), blue: CGFloat(130.0/255.0), alpha: CGFloat(1.0))
         case .lightBlue:
-            return UIColor(red: 217, green: 231, blue: 255, alpha: 1.0)
+            return UIColor(red: CGFloat(217.0/255.0), green: CGFloat(231.0/255.0), blue: CGFloat(255.0/255.0), alpha: CGFloat(1.0))
         case .darkBlue:
-            return UIColor(red: 140, green: 183, blue: 255, alpha: 1.0)
-        case .black:
-            return UIColor(red: 255, green: 255, blue: 255, alpha: 1.0)
+            return UIColor(red: CGFloat(95.0/255.0), green: CGFloat(140.0/255.0), blue: CGFloat(255.0/255.0), alpha: CGFloat(1.0))
         case .white:
-            return UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
+            return UIColor(red: CGFloat(255.0/255.0), green: CGFloat(255.0/255.0), blue: CGFloat(255.0/255.0), alpha: CGFloat(1.0))
+        case .black:
+            return UIColor(red: CGFloat(0.0/255.0), green: CGFloat(0.0/255.0), blue: CGFloat(0.0/255.0), alpha: CGFloat(1.0))
         case .ligthGray:
-            return UIColor(red: 232, green: 232, blue: 232, alpha: 1.0)
+            return UIColor(red: CGFloat(232.0/255.0), green: CGFloat(232.0/255.0), blue: CGFloat(232.0/255.0), alpha: CGFloat(1.0))
         case .darkGray:
-            return UIColor(red: 184, green: 184, blue: 184, alpha: 1.0)
+            return UIColor(red: CGFloat(184.0/255.0), green: CGFloat(184.0/255.0), blue: CGFloat(184.0/255.0), alpha: CGFloat(1.0))
         }
     }
 }
 
 // MARK: CUSTOM FONT
 // HOW USE IT? -- something.font = FontTheme.loginButton.font
+// Dynamic structure for fonts --> "https://toplayoutguide.medium.com/swift-custom-fonts-slightly-less-awful-f235e20027f3"
 
 enum FontTheme {
     case h1
     case h2
+    case authLabels
     case cardTitle
     case cardDescription
     case loginButton
@@ -56,15 +58,17 @@ enum FontTheme {
     var font: UIFont {
         switch self {
         case .h1:
-            return UIFont(name: "Arial", size: 34.0)!
+            return UIFont(name: "Futura", size: 42.0)!
         case .h2:
-            return UIFont(name: "Arial", size: 26.0)!
+            return UIFont(name: "Futura", size: 26.0)!
+        case .authLabels:
+            return UIFont(name: "Futura", size: 16.0)!
         case .cardTitle:
-            return UIFont(name: "Arial", size: 18.0)!
+            return UIFont(name: "Futura", size: 18.0)!
         case .cardDescription:
-            return UIFont(name: "Arial", size: 12.0)!
+            return UIFont(name: "Futura", size: 12.0)!
         case .loginButton:
-            return UIFont(name: "Arial", size: 16.0)!
+            return UIFont(name: "Futura", size: 20.0)!
         }
     }
 }
